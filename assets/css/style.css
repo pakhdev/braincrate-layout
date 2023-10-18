@@ -785,12 +785,17 @@ body {
 .auth__right-menu-item {
     position: relative;
     width: 30px;
+    user-select: none;
 }
 
 .auth__left-menu-item:hover,
 .auth__right-menu-item:hover {
     filter: brightness(105%);
     cursor: pointer;
+}
+
+.auth__menu-item--active {
+    background-color: #c75a2a !important;
 }
 
 .auth__menu-item-title {
@@ -845,6 +850,27 @@ body {
     height: 100%;
 }
 
+.auth__form-error {
+    font-size: 11px;
+    color: var(--brownish-orange);
+    margin: -10px 0 12px;
+    padding: 0 5px;
+}
+
+.auth__about {
+    background-color: var(--ethereal-blue);
+    border-radius: 7px;
+    padding: 5px 15px;
+    margin: -5px -10px 10px;
+    font-size: 13px;
+    line-height: 120%;
+}
+
+.auth__about h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
 .auth__logo-container {
     text-align: center;
     margin-bottom: 25px;
@@ -867,4 +893,3 @@ body {
     margin: 15px 0;
     text-align: center;
 }
-

@@ -24,11 +24,6 @@
 
 @media (max-width: 1000px) {
 
-    /* IF PANEL OPENED*/
-    body {
-        /*overflow: hidden;*/
-    }
-
     .main-container {
         margin: 15px
     }
@@ -190,7 +185,6 @@
         margin: 0 -15px;
     }
 
-    /* IF PANEL CLOSED*/
     .mobile-panel-fixer-container {
         display: none;
     }
@@ -200,8 +194,14 @@
     #panel {
         width: calc(100vw - 80px);
     }
-    /* IF PANEL CLOSED*/
     .mobile-panel-fixer-container {
         display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .auth__form {
+        width: calc(100vw - 115px);
+        min-width: 275px;
     }
 }

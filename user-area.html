@@ -10,272 +10,302 @@
     <link rel="stylesheet" href="assets/css/adaptations.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="mobile-panel-fixer-container">
-            <div class="mobile-panel-background">
-                <div class="left-menu">
-                    <div class="left-menu__sticky-container">
-                        <div class="left-menu__item">
-                            <div class="left-menu__item-title">Gestionar notas</div>
-                            <span class="left-menu__item-icon icon-note"></span>
-                        </div>
-                        <div class="left-menu__item">
-                            <div class="left-menu__item-title">Ajustes</div>
-                            <span class="left-menu__item-icon icon-account-settings"></span>
-                        </div>
-                        <div class="left-menu__item">
-                            <div class="left-menu__item-title">Github</div>
-                            <span class="left-menu__item-icon icon-github"></span>
-                        </div>
-                        <div class="left-menu__item">
-                            <div class="left-menu__item-title">Cerrar sesión</div>
-                            <span class="left-menu__item-icon icon-logout"></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="panel">
-                    <div id="panel__top-margin"></div>
-                    <div class="panel__close-button-container">
-                        <span onclick="closeMobilePanel()" class="icon-close panel__close-button"></span>
-                    </div>
-                    <div id="panel__sticky-container" class="panel-bottom-sticky">
-                        <div class="logo-container">
-                            <img src="assets/images/logo-light.svg" alt="BrainCrate logo" />
-                        </div>
-                        <div class="primary-buttons">
-                            <div class="button-open-form button">
-                                <span class="icon-create"></span>
-                                Crear nota
+    <div class="dashboard-page-centering">
+        <div class="main-container">
+            <div class="mobile-panel-fixer-container">
+                <div class="mobile-panel-background">
+                    <div class="left-menu">
+                        <div class="left-menu__sticky-container">
+                            <div class="left-menu__item">
+                                <div class="left-menu__item-title">Gestionar notas</div>
+                                <span class="left-menu__item-icon icon-note"></span>
                             </div>
-                            <div class="button-review-notes button">
-                                <span class="icon-review"></span>
-                                Repasar(21)
+                            <div class="left-menu__item">
+                                <div class="left-menu__item-title">Ajustes</div>
+                                <span class="left-menu__item-icon icon-account-settings"></span>
+                            </div>
+                            <div class="left-menu__item">
+                                <a href="https://github.com/pakhdev/braincrate-layout" target="_blank">
+                                    <div class="left-menu__item-title">Github</div>
+                                    <span class="left-menu__item-icon icon-github"></span>
+                                </a>
+                            </div>
+                            <div class="left-menu__item">
+                                <div class="left-menu__item-title">Cerrar sesión</div>
+                                <span class="left-menu__item-icon icon-logout"></span>
                             </div>
                         </div>
-                        <div class="panel__section-name">Buscar notas</div>
-                        <div class="panel__input-with-icon">
-                            <input type="text" class="panel__text-input" placeholder="Palabra clave">
-                            <span class="icon-search"></span>
-                        </div>
-                        <div class="panel__section-name">Etiquetas</div>
-                        <div class="panel__input-with-icon">
-                            <input type="text" class="panel__text-input" placeholder="Buscar etiquetas">
-                            <span class="icon-tag"></span>
-                        </div>
-                        <div class="panel__tags-container">
-                            <div class="panel__tag panel__tag--selected">PHP</div>
-                            <div class="panel__tag panel__tag--selected">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">OOP</div>
-                            <div class="panel__tag">PYTHON</div>
-                            <div class="panel__tag">MARIADB</div>
-                            <div class="panel__tag">TYPEORM</div>
-                            <div class="panel__tag">LARAVEL</div>
-                            <div class="panel__tag">ELOQUENT</div>
-                            <div class="panel__tag">PHP</div>
-                            <div class="panel__tag">NESTJS</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                            <div class="panel__tag">MONGODB</div>
-                            <div class="panel__tag">JAVASCRIPT</div>
-                            <div class="panel__tag">REGULAR EXPRESSIONS</div>
-                        </div>
-                        <div id="panel-expander"></div>
-                        <div id="panel__copyright" class="panel__copyright">
-                            <img src="assets/images/pakhmutov-light.svg" alt="Pakhmutov logo" />
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="content" class="content">
-            <div class="content__mobile-header">
-                <div class="logo-container">
-                    <img src="assets/images/logo-dark.svg" />
-                </div>
-                <div class="primary-buttons">
-                    <div class="button-dark button button-burger" onclick="openMobilePanel()">
-                        <span class="icon-menu"></span>
-                    </div>
-                    <div class="button-open-form button">
-                        <span class="icon-create"></span>
-                        Crear nota
-                    </div>
-                    <div class="button-review-notes button">
-                        <span class="icon-review"></span>
-                        Repasar(21)
+                    <div id="panel">
+                        <div id="panel__top-margin"></div>
+                        <div class="panel__close-button-container">
+                            <span onclick="closeMobilePanel()" class="icon-close panel__close-button"></span>
+                        </div>
+                        <div id="panel__sticky-container" class="panel-bottom-sticky">
+                            <div class="logo-container">
+                                <img src="assets/images/logo-light.svg" alt="BrainCrate logo" />
+                            </div>
+                            <div class="primary-buttons">
+                                <div class="button-open-form button">
+                                    <span class="icon-create"></span>
+                                    Crear nota
+                                </div>
+                                <div class="button-review-notes button">
+                                    <span class="icon-review"></span>
+                                    Repasar(21)
+                                </div>
+                            </div>
+                            <div class="panel__section-name">Buscar notas</div>
+                            <div class="panel__input-with-icon">
+                                <input type="text" class="panel__text-input" placeholder="Palabra clave">
+                                <span class="icon-search"></span>
+                            </div>
+                            <div class="panel__section-name">Etiquetas</div>
+                            <div class="panel__input-with-icon">
+                                <input type="text" class="panel__text-input" placeholder="Buscar etiquetas">
+                                <span class="icon-tag"></span>
+                            </div>
+                            <div class="panel__tags-container">
+                                <div class="panel__tag panel__tag--selected">PHP</div>
+                                <div class="panel__tag panel__tag--selected">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">OOP</div>
+                                <div class="panel__tag">PYTHON</div>
+                                <div class="panel__tag">MARIADB</div>
+                                <div class="panel__tag">TYPEORM</div>
+                                <div class="panel__tag">LARAVEL</div>
+                                <div class="panel__tag">ELOQUENT</div>
+                                <div class="panel__tag">PHP</div>
+                                <div class="panel__tag">NESTJS</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                                <div class="panel__tag">MONGODB</div>
+                                <div class="panel__tag">JAVASCRIPT</div>
+                                <div class="panel__tag">REGULAR EXPRESSIONS</div>
+                            </div>
+                            <div id="panel__copyright" class="panel__copyright">
+                                <img src="assets/images/pakhmutov-light.svg" alt="Pakhmutov logo" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="notes-container" class="notes-container">
-                <div class="note">
-                    <div class="note-edition">
-                        <input type="text" class="note-edition__title" placeholder="Un titulo de ejemplo para una nota">
-                        <div class="note-edition__tags">
-                            <span class="icon-tag note-edition__tags-icon"></span>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">JavaScript</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">Php</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">JavaScript</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">Php</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">JavaScript</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tags-item">
-                                <div class="note-edition__tag-text">Php</div>
-                                <div class="note-edition__tag-remove">
-                                    <span class="icon-close"></span>
-                                </div>
-                            </div>
-                            <div class="note-edition__tag-input-container">
-                                <input type="text" class="note-edition__tag-input" placeholder="añadir etiqueta">
-                                <div class="tag-suggestions">
-                                    <div class="tag-suggestions__item">Bucle</div>
-                                    <div class="tag-suggestions__item tag-suggestions__item--selected">Backend</div>
-                                    <div class="tag-suggestions__item">Bootstrap</div>
-                                    <div class="tag-suggestions__item">Bitwise</div>
-                                    <div class="tag-suggestions__item">Biblioteca</div>
-                                </div>
-                            </div>
+            <div id="content" class="content">
+                <div class="content__mobile-header">
+                    <div class="logo-container">
+                        <img src="assets/images/logo-dark.svg" />
+                    </div>
+                    <div class="primary-buttons">
+                        <div class="button-dark button button-burger" onclick="openMobilePanel()">
+                            <span class="icon-menu"></span>
                         </div>
-                        <div class="editor-toolbar">
-                            <div class="editor-toolbar__icons">
-                                <span class="icon-set-bold"></span>
-                                <span class="icon-set-italic"></span>
-                                <span class="icon-set-underline"></span>
-                                <span class="icon-set-code"></span>
-                                <span class="icon-set-list-numbered"></span>
-                                <span class="icon-set-list-dots"></span>
-                                <span class="icon-set-paragraph-left"></span>
-                                <span class="icon-set-paragraph-center"></span>
-                                <span class="icon-set-paragraph-right"></span>
-                                <span class="icon-insert-table"></span>
-                                <span class="icon-insert-link"></span>
-                                <span class="icon-insert-image"></span>
-                                <span class="icon-set-important"></span>
-                            </div>
-                            <div class="editor-toolbar__buttons">
-                                <div class="editor-toolbar__review-select-container">
-                                    <select class="editor-toolbar__review-select">
-                                        <option>Repaso normal</option>
-                                        <option>Repaso normal</option>
-                                        <option>Repaso normal</option>
-                                    </select>
-                                    <span class="icon-arrow-down"></span>
-                                </div>
-                                <div class="button button-success note__editor-save">
-                                    <span class="icon-save"></span>
-                                    Guardar nota
-                                </div>
-                            </div>
+                        <div class="button-open-form button">
+                            <span class="icon-create"></span>
+                            Crear nota
                         </div>
-                        <div contenteditable="true" class="note__editor-textarea">
-                            <p>
-                                Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                        <div class="button-review-notes button">
+                            <span class="icon-review"></span>
+                            Repasar(21)
+                        </div>
+                    </div>
+                </div>
+                <div id="notes-container" class="notes-container">
+                    <div class="note">
+                        <div class="note-edition">
+                            <input type="text" class="note-edition__title" placeholder="Un titulo de ejemplo para una nota">
+                            <div class="note-edition__tags">
+                                <span class="icon-tag note-edition__tags-icon"></span>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">JavaScript</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">Php</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">JavaScript</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">Php</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">JavaScript</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tags-item">
+                                    <div class="note-edition__tag-text">Php</div>
+                                    <div class="note-edition__tag-remove">
+                                        <span class="icon-close"></span>
+                                    </div>
+                                </div>
+                                <div class="note-edition__tag-input-container">
+                                    <input type="text" class="note-edition__tag-input" placeholder="añadir etiqueta">
+                                    <div class="tag-suggestions">
+                                        <div class="tag-suggestions__item">Bucle</div>
+                                        <div class="tag-suggestions__item tag-suggestions__item--selected">Backend</div>
+                                        <div class="tag-suggestions__item">Bootstrap</div>
+                                        <div class="tag-suggestions__item">Bitwise</div>
+                                        <div class="tag-suggestions__item">Biblioteca</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="editor-toolbar">
+                                <div class="editor-toolbar__icons">
+                                    <span class="icon-set-bold"></span>
+                                    <span class="icon-set-italic"></span>
+                                    <span class="icon-set-underline"></span>
+                                    <span class="icon-set-code"></span>
+                                    <span class="icon-set-list-numbered"></span>
+                                    <span class="icon-set-list-dots"></span>
+                                    <span class="icon-set-paragraph-left"></span>
+                                    <span class="icon-set-paragraph-center"></span>
+                                    <span class="icon-set-paragraph-right"></span>
+                                    <span class="icon-insert-table"></span>
+                                    <span class="icon-set-hidden"></span>
+                                    <span class="icon-insert-link"></span>
+                                    <span class="icon-insert-image"></span>
+                                    <span class="icon-set-text-color"></span>
+                                    <span class="icon-set-text-background-color"></span>
+                                </div>
+                                <div class="editor-toolbar__buttons">
+                                    <div class="editor-toolbar__review-select-container">
+                                        <div class="editor-toolbar__review-select-button">REPASO INTENSIVO</div>
+                                        <div class="review-settings">
+                                            <div class="review-settings__options-header">
+                                                <div>Planes de repaso</div>
+                                                <div class="review-settings__option-green">Intervalos (días)</div>
+                                            </div>
+                                            <div class="review-settings__option-row">
+                                                <div class="review-settings__option-title">Repaso básico</div>
+                                                <div class="review-settings__option-value">1, 4, 7, 21</div>
+                                            </div>
+                                            <div class="review-settings__option-row review-settings__option-row--selected">
+                                                <div class="review-settings__option-title">Repaso estándar</div>
+                                                <div class="review-settings__option-value">1, 3, 7, 21, 60</div>
+                                            </div>
+                                            <div class="review-settings__option-row">
+                                                <div class="review-settings__option-title">Repaso intensivo</div>
+                                                <div class="review-settings__option-value">1, 3, 7, 21, 60, 90, 182</div>
+                                            </div>
+                                            <div class="review-settings__option-row">
+                                                <div class="review-settings__option-title">No repasar</div>
+                                                <div class="review-settings__option-value">Nunca</div>
+                                            </div>
+                                            <div class="review-settings__automatic-removing">
+                                                <label class="toggle">
+                                                    <input type="checkbox" class="toggle-checkbox">
+                                                    <div class="toggle-switch"></div>
+                                                </label>
+                                                <div class="review-settings__toggle-text">
+                                                    Borrar ésta nota tras completar todos los repasos
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button button-success note__editor-save">
+                                        <span class="icon-save"></span>
+                                        Guardar nota
+                                    </div>
+                                </div>
+                            </div>
+                            <div contenteditable="true" class="note__editor-textarea">
+                                <p>
+                                    Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
                                 <div class="code-text">
                                     .code-text {<br>
                                     background-color: #EFECF4;<br>
@@ -284,16 +314,42 @@
                                     margin: 10px 0;<br>
                                     }
                                 </div>
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
+                        </div>
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -307,42 +363,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -364,50 +432,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
                                     </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -421,42 +477,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -478,50 +546,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
                                     </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -535,42 +591,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -592,50 +660,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
                                     </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -649,42 +705,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -706,50 +774,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
                                     </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -763,38 +819,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -808,42 +864,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -865,50 +933,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Un titulo de ejemplo para una nota</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <div class="button button-success note__reviewed-button">Marcar como repasado</div>
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__delete-popup">
+                                        <div>¿Desea eliminar ésta nota?</div>
+                                        <div class="button-danger button">Eliminar nota</div>
+                                        <div class="button-success button">No eliminar</div>
                                     </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Un titulo de ejemplo para una nota</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
                                 <div class="button button-success note__reviewed-button">Marcar como repasado</div>
                                 <span class="icon-edit"></span>
@@ -922,42 +978,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <div class="button button-success note__reviewed-button">Marcar como repasado</div>
-                            <span class="icon-edit"></span>
-                            <span class="icon-delete"></span>
-                            <span class="icon-menu-dots"></span>
-                            <div class="note__delete-popup">
-                                <div>¿Desea eliminar ésta nota?</div>
-                                <div class="button-danger button">Eliminar nota</div>
-                                <div class="button-success button">No eliminar</div>
+                    <div class="note">
+                        <div class="note__header">
+                            <div class="note__title">
+                                <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                            </div>
+                            <div class="note__header-toolbar-container">
+                                <div class="note__toolbar">
+                                    <span class="icon-edit"></span>
+                                    <span class="icon-delete"></span>
+                                    <span class="icon-menu-dots"></span>
+                                    <div class="note__review-popup">
+                                        <div class="note__review-header">
+                                            <div class="note__review-icon">
+                                                <span class="icon-review"></span>
+                                            </div>
+                                            <div class="note__review-info">
+                                                <b>Repasos</b>
+                                                Realizados: 2/5
+                                            </div>
+                                        </div>
+                                        <div class="button-danger button">Cancelar repasos</div>
+                                        <div class="button-warning button">Restablecer repasos</div>
+                                        <div class="note__review-dates">
+                                            Creada: 08.03.2023<br>
+                                            Modificada: 09.03.2023<br>
+                                            Último repaso: 17.03.2023<br>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="note">
-                    <div class="note__header">
-                        <div class="note__title">
-                            <a>Otro titulo de ejemplo mucho más largo para que ocupe mucho espacio</a>
+                        <div class="note__content">
+                            Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
+                            <div class="code-text">
+                                .code-text {<br>
+                                background-color: #EFECF4;<br>
+                                border-radius: 7px;<br>
+                                padding: 25px;<br>
+                                margin: 10px 0;<br>
+                                }
+                            </div>
                         </div>
-                        <div class="note__header-toolbar-container">
+                        <div class="note__tags">Funciones Javascript Components Interpolation</div>
+                        <div class="note__footer">
                             <div class="note__toolbar">
-                                <span class="icon-edit"></span>
-                                <span class="icon-delete"></span>
-                                <span class="icon-menu-dots"></span>
+                                <span class="icon-edit note__toolbar-icon"></span>
+                                <span class="icon-delete note__toolbar-icon"></span>
+                                <span class="icon-menu-dots note__toolbar-icon"></span>
                                 <div class="note__review-popup">
                                     <div class="note__review-header">
                                         <div class="note__review-icon">
@@ -979,54 +1047,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="note__content">
-                        Texto de ejemplo con un <span class="highlighted-text">texto destacado</span>
-                        <div class="code-text">
-                            .code-text {<br>
-                            background-color: #EFECF4;<br>
-                            border-radius: 7px;<br>
-                            padding: 25px;<br>
-                            margin: 10px 0;<br>
-                            }
-                        </div>
-                    </div>
-                    <div class="note__tags">Funciones Javascript Components Interpolation</div>
-                    <div class="note__footer">
-                        <div class="note__toolbar">
-                            <span class="icon-edit note__toolbar-icon"></span>
-                            <span class="icon-delete note__toolbar-icon"></span>
-                            <span class="icon-menu-dots note__toolbar-icon"></span>
-                            <div class="note__review-popup">
-                                <div class="note__review-header">
-                                    <div class="note__review-icon">
-                                        <span class="icon-review"></span>
-                                    </div>
-                                    <div class="note__review-info">
-                                        <b>Repasos</b>
-                                        Realizados: 2/5
-                                    </div>
-                                </div>
-                                <div class="button-danger button">Cancelar repasos</div>
-                                <div class="button-warning button">Restablecer repasos</div>
-                                <div class="note__review-dates">
-                                    Creada: 08.03.2023<br>
-                                    Modificada: 09.03.2023<br>
-                                    Último repaso: 17.03.2023<br>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="content-copyright-container">
+                    <div class="copyright">
+                        <img src="assets/images/pakhmutov-dark.svg" />
                     </div>
                 </div>
             </div>
-            <div class="content-copyright-container">
-                <div class="copyright">
-                    <img src="assets/images/pakhmutov-dark.svg" />
-                </div>
-            </div>
+            <div class="decor-layer decor-layer--first"></div>
+            <div class="decor-layer decor-layer--second"></div>
+            <div class="decor-layer decor-layer--third"></div>
         </div>
-        <div class="decor-layer decor-layer--first"></div>
-        <div class="decor-layer decor-layer--second"></div>
-        <div class="decor-layer decor-layer--third"></div>
     </div>
     <script src="assets/js/layout.js"></script>
 </body>

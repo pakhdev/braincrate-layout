@@ -33,7 +33,6 @@ const handlePanelClasses = () => {
         panelCopyright.style.bottom = '35px';
         return;
     } else {
-        document.getElementById('panel-expander').removeAttribute('style');
         document.getElementById('panel__copyright').removeAttribute('style');
     }
 

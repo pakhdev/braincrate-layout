@@ -1,44 +1,40 @@
 let lastScrollPos = 0;
 let panelState = false;
-
-if (window.innerHeight + window.scrollY > document.getElementById('panel__sticky-container').clientHeight) {
-    const panelCopyright = document.getElementById('panel__copyright');
-    panelCopyright.style.position = 'sticky';
-    panelCopyright.style.bottom = '35px';
-}
-
-if (window.innerHeight + window.scrollY > document.getElementById('notes-container').clientHeight) {
-    document.getElementById('panel__sticky-container').style.minHeight = 'calc(100vh - 160px)';
-}
+let panelMinHeightCorrection = null;
 
 const handlePanelClasses = () => {
-
-    const viewPortHeight = window.innerHeight + window.scrollY - window.scrollY;
     const panelTopMarginDiv = document.getElementById('panel__top-margin');
+    const notesContainerDiv = document.getElementById('notes-container');
     const stickyPanelDiv = document.getElementById('panel__sticky-container');
+    const panelCopyrightDiv = document.getElementById('panel__copyright');
+    const notesContainerHeight = notesContainerDiv.clientHeight;
+    const stickyPanelHeight = stickyPanelDiv.clientHeight;
+    const viewPortHeight = window.innerHeight;
+
+    if (viewPortHeight >= stickyPanelHeight) {
+        let minHeightCorrection = viewPortHeight - notesContainerHeight + 10;
+
+        if (minHeightCorrection < 30) minHeightCorrection = 30;
+        if (minHeightCorrection > 100) minHeightCorrection = 100;
+        if (minHeightCorrection !== panelMinHeightCorrection)
+            document.getElementById('panel__sticky-container').style.minHeight = `calc(100vh - ${ minHeightCorrection }px)`;
+
+        panelMinHeightCorrection = minHeightCorrection;
+        panelCopyrightDiv.style.position = 'sticky';
+        panelCopyrightDiv.style.bottom = '35px';
+    } else if (panelMinHeightCorrection !== null) {
+        stickyPanelDiv.removeAttribute('style');
+        panelCopyrightDiv.removeAttribute('style');
+        panelMinHeightCorrection = null;
+    }
+
+    if (stickyPanelHeight > notesContainerHeight) return;
 
     const direction = scrollDirection();
 
-    // Если контента меньше панели - НИЧЕГО НЕ ДЕЛАТЬ
-    const panelHeight = document.getElementById('panel__sticky-container').clientHeight;
-    const contentHeight = document.getElementById('notes-container').clientHeight;
-    if (panelHeight > contentHeight) return;
-
-    // Если вьюпорт больше высоты панели - стики топ и убрать маржин (как то клеить копирайт к низу?)
-    if (viewPortHeight > document.getElementById('panel__sticky-container').clientHeight) {
-        document.getElementById('panel__sticky-container').className = 'panel-top-sticky';
-        document.getElementById('panel__top-margin').removeAttribute('style');
-        const panelCopyright = document.getElementById('panel__copyright');
-        panelCopyright.style.position = 'sticky';
-        panelCopyright.style.bottom = '35px';
-        return;
-    } else {
-        document.getElementById('panel__copyright').removeAttribute('style');
-    }
-
     if (direction === 'down') {
         const copyrightOnScreen = document.getElementById('panel__copyright').getBoundingClientRect().top;
-        if (panelState !== 'bottom' && copyrightOnScreen <= viewPortHeight) {
+        if (panelState !== 'bottom' && copyrightOnScreen + 50 <= viewPortHeight) {
             stickyPanelDiv.className = 'panel-bottom-sticky';
             panelTopMarginDiv.className = 'flex-it'
             panelState = 'bottom';
@@ -46,8 +42,9 @@ const handlePanelClasses = () => {
         } else if (panelState === 'bottom') return;
     } else if (direction === 'up') {
         const panelOnScreen = stickyPanelDiv.getBoundingClientRect().top;
-        if (panelState !== 'up' && panelOnScreen >= 0) {
+        if (panelState !== 'up' && panelOnScreen-20 >= 0) {
             stickyPanelDiv.className = 'panel-top-sticky';
+            panelTopMarginDiv.removeAttribute('class');
             panelTopMarginDiv.removeAttribute('style');
             panelState = 'up';
             return;

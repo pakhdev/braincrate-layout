@@ -126,7 +126,7 @@
     .note {
         padding: 15px;
         max-width: none;
-        width: calc(100vw - 60px);
+        width: calc(100vw - 93px);
     }
 
     .note__header-toolbar-container {

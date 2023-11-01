@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>BrainCrate - Ajustes de su cuenta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/adaptations.css">
+</head>
+<body>
+<div class="dashboard-page-centering">
+    <div class="main-container">
+        <div class="mobile-panel-fixer-container">
+            <div class="mobile-panel-background">
+                <div class="left-menu">
+                    <div class="left-menu__sticky-container">
+                        <div class="left-menu__item">
+                            <div class="left-menu__item-title">Gestionar notas</div>
+                            <span class="left-menu__item-icon icon-note"></span>
+                        </div>
+                        <div class="left-menu__item">
+                            <div class="left-menu__item-title">Ajustes</div>
+                            <span class="left-menu__item-icon icon-account-settings"></span>
+                        </div>
+                        <div class="left-menu__item">
+                            <a href="https://github.com/pakhdev/braincrate-layout" target="_blank">
+                                <div class="left-menu__item-title">Github</div>
+                                <span class="left-menu__item-icon icon-github"></span>
+                            </a>
+                        </div>
+                        <div class="left-menu__item">
+                            <div class="left-menu__item-title">Cerrar sesión</div>
+                            <span class="left-menu__item-icon icon-logout"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="panel">
+                    <div id="panel__top-margin"></div>
+                    <div class="panel__close-button-container">
+                        <span onclick="closeMobilePanel()" class="icon-close panel__close-button"></span>
+                    </div>
+                    <div id="panel__sticky-container" class="panel-bottom-sticky">
+                        <div class="logo-container">
+                            <img src="assets/images/logo-light.svg" alt="BrainCrate logo"/>
+                        </div>
+                        <div class="user-settings">
+                            <div class="user-settings__email">
+                                <div class="panel__section-name">Su E-Mail</div>
+                                <div class="user-settings__inputs">
+                                    <input type="text" placeholder="Correo electrónico" class="panel__text-input">
+                                    <div class="auth__form-error">Usuario con èste correo electrónico ya existe</div>
+                                </div>
+                                <button class="button button-success button-medium">
+                                    Guardar cambios
+                                </button>
+                            </div>
+                            <div class="user-settings__password">
+                                <div class="panel__section-name">Cambiar la contraseña</div>
+                                <div class="user-settings__inputs">
+                                    <input type="password" placeholder="Contraseña actual" class="panel__text-input">
+                                    <input type="password" placeholder="Contraseña nueva" class="panel__text-input">
+                                    <div class="auth__form-error">Debe contener al menos 6 caractéres</div>
+                                    <input type="password" placeholder="Confirmar contraseña" class="panel__text-input">
+                                </div>
+                                <button class="button button-success button-medium">
+                                    Guardar cambios
+                                </button>
+                            </div>
+                        </div>
+                        <div class="expander"></div>
+                        <div id="panel__copyright" class="panel__copyright">
+                            <img src="assets/images/pakhmutov-light.svg" alt="Pakhmutov logo"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <div class="content__mobile-header">
+                <div class="logo-container">
+                    <img src="assets/images/logo-dark.svg"/>
+                </div>
+                <div class="primary-buttons">
+                    <div class="button-dark button button-burger" onclick="openMobilePanel()">
+                        <span class="icon-menu"></span>
+                    </div>
+                    <div class="button-open-form button">
+                        <span class="icon-create"></span>
+                        Crear nota
+                    </div>
+                    <div class="button-review-notes button">
+                        <span class="icon-review"></span>
+                        Repasar(21)
+                    </div>
+                </div>
+            </div>
+            <div id="notes-container" class="notes-container">
+
+                <div class="note">
+                    <div class="no-results">
+                        <div class="no-results__icon">
+                            <span class="icon-no-results"></span>
+                        </div>
+                        <div class="no-results__title">
+                            Nada que mostrar, lo sentimos
+                        </div>
+                        <div class="no-results__description">
+                            No se encontraron notas que coincidan con
+                            tu búsqueda. ¡Es una oportunidad perfecta para
+                            crear una nueva nota sobre este tema!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-copyright-container">
+                <div class="copyright">
+                    <img src="assets/images/pakhmutov-dark.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="decor-layer decor-layer--first"></div>
+        <div class="decor-layer decor-layer--second"></div>
+        <div class="decor-layer decor-layer--third"></div>
+    </div>
+</div>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>

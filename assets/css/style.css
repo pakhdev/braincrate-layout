@@ -671,6 +671,9 @@ body {
 .note__content {
     margin: 15px 0;
     font-size: 13px;
+    & img {
+        max-width: 100%;
+    }
 }
 
 .note__tags {
@@ -962,8 +965,11 @@ body {
 .note__editor-textarea {
     font-size: 13px;
     color: #30435A;
-    min-height: 130px;
-    padding: 15px 0;
+    min-height: 315px;
+    padding: 20px 30px;
+    & img {
+        max-width: 100%;
+    }
 }
 
 /* #################################################### */
@@ -1244,6 +1250,9 @@ body {
     background-color: var(--ethereal-blue);
     padding: 0 15px;
     height: 41px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .editor-toolbar__icons-container {
@@ -1468,7 +1477,7 @@ body {
 }
 
 .modal {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     display: flex;
     height: 100%;

@@ -507,6 +507,20 @@ body {
     }
 }
 
+.google-link-confirmation__text {
+    font-size: 12px;
+    margin: 10px 0;
+    color: var(--mint-green);
+}
+
+.google-link-confirmation__buttons-container {
+    display: flex;
+    gap: 10px;
+    & button {
+        flex: 1;
+    }
+}
+
 /* ########################## */
 /* Visualización de las notas */
 
